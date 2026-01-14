@@ -27,10 +27,18 @@ jobs:
         channel-priority: true
         use-mamba: true
 
+    - name: Ensure mamba is installed
+      shell: bash -l {0}
+      run: |
+        # some runners may not expose mamba despite setup-miniconda; install as a fallback
+        conda install -n base -c conda-forge mamba -y || true
+
     - name: Create conda environment from environment.yml
       shell: bash -l {0}
       run: |
         mamba env create -f environment.yml -y
+        # ensure conda activation is available in the shell
+        source "$(conda info --base)/etc/profile.d/conda.sh"
         conda activate IUH
 
     - name: Run tests with pytest
