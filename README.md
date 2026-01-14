@@ -1,6 +1,6 @@
 # IUH NASH LinearRes
 
-[![Tests](https://github.com/alessandroamaranto/q_rec_nash_iuh/actions/workflows/tests.yml/badge.svg)](https://github.com/alessandroamaranto/q_rec_nash_iuh/actions/workflows/tests.yml)
+[![Tests](https://github.com/FloodRiskGroup/Runoff2Flow/actions/workflows/tests.yml/badge.svg)](https://github.com/FloodRiskGroup/Runoff2Flow/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **IUH NASH LinearRes** is a hydrological modeling framework for reconstructing monthly river discharge using an Instantaneous Unit Hydrograph (IUH) Nash model combined with a linear reservoir representation of baseflow. The software is designed for data-scarce basins and long-term historical analyses where continuous discharge observations are unavailable or incomplete.
