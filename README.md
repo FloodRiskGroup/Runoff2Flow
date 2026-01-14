@@ -1,9 +1,9 @@
-# IUH NASH LinearRes
+# Runoff2Flow
 
 [![Tests](https://github.com/FloodRiskGroup/Runoff2Flow/actions/workflows/tests.yml/badge.svg)](https://github.com/FloodRiskGroup/Runoff2Flow/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**IUH NASH LinearRes** is a hydrological modeling framework for reconstructing monthly river discharge using an Instantaneous Unit Hydrograph (IUH) Nash model combined with a linear reservoir representation of baseflow. The software is designed for data-scarce basins and long-term historical analyses where continuous discharge observations are unavailable or incomplete.
+**Runoff2Flow** is a hydrological modeling framework for reconstructing monthly river discharge using an Instantaneous Unit Hydrograph (IUH) Nash model combined with a linear reservoir representation of baseflow. The software is designed for data-scarce basins and long-term historical analyses where continuous discharge observations are unavailable or incomplete.
 
 The framework integrates surface runoff and groundwater recharge inputs with observed discharge data, calibrates model parameters using a genetic algorithm, and reconstructs discharge over the full historical period. Flow-duration curves are provided for frequency analysis.
 
@@ -13,7 +13,7 @@ The framework integrates surface runoff and groundwater recharge inputs with obs
 
 Reliable river discharge time series are essential for hydrological analysis and water resources management, yet many river basins lack continuous long-term discharge observations. Existing hydrological modeling systems often focus on daily or sub-daily simulations, require complex parameterization, or do not provide reproducible workflows for discharge reconstruction at monthly resolution.
 
-IUH NASH LinearRes addresses this gap by providing a lightweight, reproducible, and configuration-driven framework for monthly discharge reconstruction based on the IUH Nash concept and linear reservoir modeling. The software emphasizes transparency, database-centered data handling, and reproducible calibration using genetic algorithms, making it suitable for comparative basin studies and historical reconstructions.
+Runoff2Flow addresses this gap by providing a lightweight, reproducible, and configuration-driven framework for monthly discharge reconstruction based on the IUH Nash concept and linear reservoir modeling. The software emphasizes transparency, database-centered data handling, and reproducible calibration using genetic algorithms, making it suitable for comparative basin studies and historical reconstructions.
 
 ---
 
