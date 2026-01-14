@@ -71,7 +71,7 @@ Typical outputs include reconstructed monthly discharge time series, calibrated 
 
 Runoff2Flow is released as open-source software under the MIT license. The source code, documentation, and example data are available at:
 
-https://github.com/FloodRiskGroup/q_rec_nash_iuh
+https://github.com/FloodRiskGroup/Runoff2Flow
 
 # AI usage disclosure
 
