@@ -1,0 +1,8 @@
+1	set data in calibration_settings.ini 			: the ini file contains configuration parameters
+2	run Graph_observed_data.py						: viewing of observed data
+3	run Split_train_test.py							: split of observed data in training period and test period
+4	run Model_calibration.py						: calibration of model parameters using a genetic algorithm
+5	show image graph of calibration result			: hydrograph graph with calibration results
+6	run query_RIVERBASIN_table.py					: view the table with the final parameters
+7	run Model_IUH_NASH_LinearRes_calc_period.py		: calculating discharge values for the entire input data period
+8	run Flow-duration_curve.py						: calculatinh of duration curves for different periods

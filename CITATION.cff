@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+
+title: "IUH NASH LinearRes: A framework for monthly river discharge reconstruction using IUH Nash and linear reservoir modeling"
+
+authors:
+  - family-names: Mancusi
+    given-names: Leonardo
+    affiliation: "Sustainable Development and Energy Sources Department, RSE Ricerca sul Sistema Energetico, Milano, Italy"
+
+  - family-names: Braca
+    given-names: Giovanni
+    affiliation: "ISPRA – Istituto Superiore per la Protezione e la Ricerca Ambientale, Roma, Italy"
+
+  - family-names: Amaranto
+    given-names: Alessandro
+    affiliation: "Sustainable Development and Energy Sources Department, RSE Ricerca sul Sistema Energetico, Milano, Italy"
+
+year: 2026
+
+repository-code: "https://github.com/alessandroamaranto/q_rec_nash_iuh"
+
+license: MIT
+keywords:
+  - hydrology
+  - river discharge reconstruction
+  - IUH Nash
+  - linear reservoir modeling

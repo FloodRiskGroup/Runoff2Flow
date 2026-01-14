@@ -1,0 +1,7 @@
+Steps
+
+1) Average_watershed_values.py
+2) Load_Discharge_RSE_file.py
+3) CreateDatabaseSqlite.py
+4) Upload_TimeSeries.py
+5) GraphFromDB.py

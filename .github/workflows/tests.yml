@@ -1,0 +1,54 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        auto-update-conda: true
+        python-version: ${{ matrix.python-version }}
+        channels: conda-forge,defaults
+        channel-priority: true
+        use-mamba: true
+
+    - name: Create conda environment from environment.yml
+      shell: bash -l {0}
+      run: |
+        mamba env create -f environment.yml -y
+        conda activate IUH
+
+    - name: Run tests with pytest
+      shell: bash -l {0}
+      run: |
+        conda activate IUH
+        pytest tests/ -v --tb=short
+
+    - name: Generate coverage report
+      shell: bash -l {0}
+      run: |
+        conda activate IUH
+        pytest tests/ --cov=script_run_model --cov=script_project_setup --cov-report=xml --cov-report=term-missing
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
