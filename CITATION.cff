@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
 
-title: "IUH NASH LinearRes: A framework for monthly river discharge reconstruction using IUH Nash and linear reservoir modeling"
+title: "Runoff2Flow: A framework for monthly river discharge reconstruction using IUH Nash and linear reservoir modeling"
 
 authors:
   - family-names: Mancusi
