@@ -120,3 +120,17 @@ python Flow-duration_curve.py         # Generate flow-duration curves
 For interactive workflow, see Jupyter notebooks in each folder.
 
 ---
+
+## Output
+
+Running the codes generates the following output folders:
+
+- **`TimeSeries/`**: Contains processed time series files (recharge, runoff, observed discharge) that serve as input for the model.
+
+- **`Project/`**: SQLite database containing the reconstructed time series from Phase 1 data processing.
+
+- **`img_calibration/`**: Diagnostic plots for assessing model calibration quality during the genetic algorithm optimization.
+
+- **`img_results/`**: Final results including reconstructed discharge time series plots and flow-duration curves.
+
+---
