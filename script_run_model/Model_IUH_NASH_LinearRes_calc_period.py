@@ -395,6 +395,10 @@ def main():
     i_par+=1
     p.append(ListValues[i_par])
 
+    # k_sup Coefficient: depletion constant of surface Nash model
+    i_par+=1
+    p.append(ListValues[i_par])
+
     Model=IUH_NASH_LinearRes(ProjectName,ProjectPath,dic_param,p)
 
     Model.Run()

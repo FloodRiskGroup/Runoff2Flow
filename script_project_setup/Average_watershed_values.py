@@ -109,9 +109,9 @@ def Make_raster_from_vect_layer(cols, rows, gt, prj, lyr, AttrOption, type=GDT_I
     Rasterize vector polygon layer to binary mask grid.
     Creates watershed mask for extraction/averaging of NetCDF climate data.
     """
-    type = GDT_Int16
+    
 
-    driver3 = gdal.GetDriverByName(format)
+    driver3 = gdal.GetDriverByName("MEM")
     driver3.Register()
 
     ds_tmp = driver3.Create('vector.tif', cols, rows, 1, type)
